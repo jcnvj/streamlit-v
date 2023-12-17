@@ -47,5 +47,22 @@ def main():
         else:
             st.write("BMI 평균치:", round(average_bmi, 1))
 
+option1 = st.checkbox('옵션 1')
+option2 = st.checkbox('옵션 2')
+option3 = st.checkbox('옵션 3')
+
+# 체크박스의 상태에 따라 통계 표시
+if option1:
+    st.write('옵션 1 선택됨')
+if option2:
+    st.write('옵션 2 선택됨')
+if option3:
+    st.write('옵션 3 선택됨')
+
+# 선택된 옵션의 개수 통계 표시
+selected_options = [option1, option2, option3]
+selected_count = sum(selected_options)
+st.write('선택된 옵션 개수:', selected_count)
+
 if __name__ == "__main__":
     main()
