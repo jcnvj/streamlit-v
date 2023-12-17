@@ -40,11 +40,6 @@ def main():
         num2 = 0
         bmi_list = []
 
-    if st.button('입력한 키와 몸무게 정리하기'):
-        data = {'키': num1, '몸무게': num2}
-        st.write("입력한 키와 몸무게:")
-        st.write(data)
-
     if st.button('BMI 평균치 계산하기'):
         average_bmi = calculate_average_bmi(bmi_list)
         if average_bmi == 0:
