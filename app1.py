@@ -47,22 +47,22 @@ def main():
         else:
             st.write("BMI 평균치:", round(average_bmi, 1))
 
-option1 = st.checkbox('옵션 1')
-option2 = st.checkbox('옵션 2')
-option3 = st.checkbox('옵션 3')
+# 초기값 설정
+total_sum = 0
 
-# 체크박스의 상태에 따라 통계 표시
-if option1:
-    st.write('옵션 1 선택됨')
-if option2:
-    st.write('옵션 2 선택됨')
-if option3:
-    st.write('옵션 3 선택됨')
+# Streamlit 앱 제목과 설명 표시
+st.title('숫자 더하기')
+st.write('다양한 사람들이 숫자를 입력하고 실시간으로 더해봅시다.')
 
-# 선택된 옵션의 개수 통계 표시
-selected_options = [option1, option2, option3]
-selected_count = sum(selected_options)
-st.write('선택된 옵션 개수:', selected_count)
+# 숫자 입력 및 더하기 버튼 구성
+number = st.number_input('숫자를 입력하세요.', value=0)
+button = st.button('더하기')
+
+# 더하기 버튼이 클릭되면 숫자를 더하고 결과 표시
+if button:
+    total_sum += number
+
+st.write('누적 합계:', total_sum)
 
 if __name__ == "__main__":
     main()
