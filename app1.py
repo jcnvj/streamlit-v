@@ -40,29 +40,6 @@ def main():
         num2 = 0
         bmi_list = []
 
-    if st.button('BMI 평균치 계산하기'):
-        average_bmi = calculate_average_bmi(bmi_list)
-        if average_bmi == 0:
-            st.write("BMI 평균치를 계산할 데이터가 없습니다.")
-        else:
-            st.write("BMI 평균치:", round(average_bmi, 1))
-
-# 초기값 설정
-total_sum = 0
-
-# Streamlit 앱 제목과 설명 표시
-st.title('숫자 더하기')
-st.write('다양한 사람들이 숫자를 입력하고 실시간으로 더해봅시다.')
-
-# 숫자 입력 및 더하기 버튼 구성
-number = st.number_input('숫자를 입력하세요.', value=0)
-button = st.button('더하기')
-
-# 더하기 버튼이 클릭되면 숫자를 더하고 결과 표시
-if button:
-    total_sum += number
-
-st.write('누적 합계:', total_sum)
 
 if __name__ == "__main__":
     main()
