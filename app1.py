@@ -27,8 +27,8 @@ def main():
         st.write(result)
 
     if st.button('초기화'):
-            num1 = "당신의 키를 입력하세요."
-            num2 = "당신의 몸무게를 입력하세요."
+            num1 = 0
+            num2 = 0
 
 
 if __name__ == "__main__":
