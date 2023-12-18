@@ -16,13 +16,6 @@ def bmical(num1, num2):
     result = "BMI 지수: " + str(d) + ", " + f + "입니다."
     return result
 
-def calculate_average_bmi(bmi_list):
-    if len(bmi_list) == 0:
-        return 0
-    total_bmi = sum(bmi_list)
-    average_bmi = total_bmi / len(bmi_list)
-    return average_bmi
-
 def main():
     st.title('월봉고등학교 학생 여러분 안녕하세요!')
 
