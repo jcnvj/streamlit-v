@@ -25,20 +25,17 @@ def calculate_average_bmi(bmi_list):
 
 def main():
     st.title('월봉고등학교 학생 여러분 안녕하세요!')
-    bmi_list = []
 
     num1 = st.number_input("당신의 키를 입력하세요.", key="height_input_1")
     num2 = st.number_input("당신의 몸무게를 입력하세요.", key="weight_input_1")
 
     if st.button('BMI 계산하기'):
         result = bmical(num1, num2)
-        bmi_list.append(num2 / (num1 / 100) ** 2)
         st.write(result)
 
     if st.button('초기화'):
         num1 = 0
         num2 = 0
-        bmi_list = []
 
 
 if __name__ == "__main__":
