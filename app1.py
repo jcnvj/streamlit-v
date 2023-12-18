@@ -27,8 +27,8 @@ def main():
         st.write(result)
 
     if st.button('초기화'):
-    num1 = 0
-    num2 = 0
+        num1 = 0
+        num2 = 0
 
 
 if __name__ == "__main__":
