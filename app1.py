@@ -26,9 +26,6 @@ def main():
         result = bmical(num1, num2)
         st.write(result)
 
-    if st.button('초기화'):
-        num1 = 0
-        num2 = 0
 
 
 if __name__ == "__main__":
