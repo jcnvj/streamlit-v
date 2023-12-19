@@ -17,7 +17,7 @@ def bmical(num1, num2):
     return result
 
 def main():
-    st.title('월봉고등학교 학생 여러분 안녕하세요!')
+    st.title('감지영독서논술 학생 여러분 안녕하세요!')
 
     num1 = st.number_input("당신의 키를 입력하세요.", key="height_input_1")
     num2 = st.number_input("당신의 몸무게를 입력하세요.", key="weight_input_1")
